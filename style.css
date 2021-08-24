@@ -1,0 +1,268 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --two00: 200;
+    --four00: 400;
+    --six00: 600;
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.header {
+    margin-top: 2.5rem;
+    font-size: 0.9rem;
+}
+
+#header-1 {
+    font-weight: var(--two00);
+}
+
+#header-2 {
+    color: var(--Very-Dark-Blue);
+    margin-bottom: 0.5rem;
+}
+
+.header-para {
+    font-size: 0.7rem;
+    color: var(--Grayish-Blue);
+    font-weight: var(--four00);
+    margin: auto;
+    width: 400px;
+}
+
+/* =================================================================================== */
+/* ====================================BOXES ONLY===================================== */
+/* ====================================UPPER BOX====================================== */
+.outside-upper-box {
+    margin: auto;
+    width: 100%;
+    position: relative;
+}
+
+.upper-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px red solid; */
+    padding: 1rem;
+    position: relative;
+}
+
+
+.upper-box-1,
+.upper-box-2,
+.upper-box-3 {
+    height: 250px;
+    margin: 1rem;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 10px -3.5px var(--Grayish-Blue),
+        -10px 0px 15px -3.5px var(--Very-Light-Gray),
+        10px 0px 10px -2px var(--Very-Light-Gray);
+    position: relative;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.upper-box-1>img,
+.upper-box-2>img,
+.upper-box-3>img {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+.upper-box-2 {
+    border-top: var(--Red) 4px solid;
+}
+
+.upper-box-1 {
+    border-top: var(--Cyan) 4px solid;
+    position: relative;
+    top: 9.5rem;
+}
+
+.upper-box-3 {
+    border-top: var(--Blue) 4px solid;
+    position: relative;
+    top: 9.5rem;
+}
+
+/* =================================================================================== */
+/* ====================================LOWER BOX====================================== */
+.lower-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px red solid; */
+    /* position: relative; */
+}
+
+#lower-box-1 {
+    cursor: pointer;
+    height: 250px;
+    margin: 1rem;
+    width: 300px;
+    border-radius: 5px;
+    position: relative;
+    padding: 1.5rem;
+    border-top: var(--Orange) 3px solid;
+    box-shadow: 0px 10px 10px -3.5px #a0a2ab,
+        -10px 0px 15px -3.5px var(--Very-Light-Gray),
+        10px 0px 10px -2px var(--Very-Light-Gray);
+}
+
+#lower-box-1>img {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
+
+/* =========================================================== */
+/* =========================================================== */
+.headings {
+    font-size: 1.1rem;
+    /* opacity: 0.8; */
+    color: var(--Very-Dark-Blue);
+}
+
+.paragraphs {
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+
+@media (min-width: 100px) and (max-width: 960px) {
+
+    .upper-box-1,
+    .upper-box-2,
+    .upper-box-3 {
+        height: 250px;
+        margin: 1rem;
+        width: 250px;
+        border-radius: 5px;
+        position: relative;
+        padding: 1rem;
+    }
+
+    #lower-box-1 {
+        height: 250px;
+        margin: 1rem;
+        width: 250px;
+        border-radius: 5px;
+        position: relative;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 830px) {
+    #lower-box-1 {
+        height: 250px;
+        margin: 1rem;
+        width: 30vw;
+        border-radius: 5px;
+        position: relative;
+        padding: 1rem;
+    }
+
+}
+
+@media (min-width: 100px) and (max-width: 830px) {
+
+    .upper-box-1,
+    .upper-box-2,
+    .upper-box-3 {
+        position: relative;
+        top: 0%;
+        width: 80vw;
+        text-align: left;
+    }
+
+    .headings {
+        font-size: 2rem;
+    }
+
+    .paragraphs {
+        font-size: 1rem;
+    }
+
+    #lower-box-1 {
+        width: 80vw;
+        text-align: left;
+    }
+
+    .upper-box {
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 830px) {
+    .headings {
+        font-size: 1.5rem;
+    }
+
+    .paragraphs {
+        font-size: 1rem;
+    }
+
+    .header {
+        margin-top: 3.5rem;
+        font-size: 0.9rem;
+    }
+
+    #header-2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .header-para {
+        font-size: 0.7rem;
+        margin: auto;
+        width: 300px;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 410px) {
+    .header {
+        margin-top: 3.5rem;
+        font-size: 0.7rem;
+    }
+
+    .header-para {
+        font-size: 0.7rem;
+        margin: auto;
+        width: 250px;
+    }
+
+    .headings {
+        font-size: 1rem;
+    }
+
+    .paragraphs {
+        font-size: 0.6rem;
+    }
+
+    .upper-box-1,
+    .upper-box-2,
+    .upper-box-3 {
+        height: 200px;
+    }
+    
+    #lower-box-1{
+        height: 200px;
+    }
+}
